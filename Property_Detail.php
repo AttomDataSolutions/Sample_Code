@@ -1,7 +1,7 @@
 <?php 
 
 $request = new HttpRequest(); 
-$request->setUrl('https://search.onboard-apis.com/propertyapi/v1.0.0/property/detail&#39;); 
+$request->setUrl('https://search.onboard-apis.com/propertyapi/v1.0.0/property/detail'); 
 $request->setMethod(HTTP_METH_GET); 
 
 $request->setQueryData(array( 
