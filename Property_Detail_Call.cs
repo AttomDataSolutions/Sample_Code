@@ -25,13 +25,19 @@ namespace CSHttpClientSample
             /////////////////////////////////////////////////////////////
             var apiKey = "###### your api key here ######";
             var headerAccept = "application/xml";
-            var inputAddress = "1731 INGRAM TER, DELTONA, FL 32725";
             /////////////////////////////////////////////////////////////
 
             client.DefaultRequestHeaders.Add("apikey", apiKey);
             client.DefaultRequestHeaders.Add("accept", headerAccept);
 
-            var uri = string.Format("https://search.onboard-apis.com/propertyapi/v1.0.0/property/detail?address={0}", inputAddress);
+            /////////////////////////////////////////////////////////////
+            ///
+            /// UNCOMMENT THE LINE THAT MATCHES YOUR INPUT REUQIREMENTS
+            ///
+            /////////////////////////////////////////////////////////////
+
+            var uri = @"https://search.onboard-apis.com/propertyapi/v1.0.0/property/detail?address=1731 INGRAM TER, DELTONA, FL 32725";
+            //var uri = @"https://search.onboard-apis.com/propertyapi/v1.0.0/property/detail?fips=12127&apn=813016030040";
 
             string response = await client.GetStringAsync(uri);
 
