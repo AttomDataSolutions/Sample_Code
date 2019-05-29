@@ -32,7 +32,7 @@ if(isset($_REQUEST['submit']) AND ($_REQUEST['submit'] =="Submit")){
 	$address2 = urlencode($explodedAddressArr[0]);
 
 	/*Once the address is separated, you can pass these parameters into the Onboard API using cURL hit.*/
-	$url = "http://search.onboard-apis.com/propertyapi/v1.0.0/property/detailwithschools?address1=$address1&address2=$address2";
+	$url = "http://api.gateway.attomdata.com/propertyapi/v1.0.0/property/detailwithschools?address1=$address1&address2=$address2";
 	
 	$curl = curl_init();
 	curl_setopt_array($curl, array(
