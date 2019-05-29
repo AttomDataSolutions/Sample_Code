@@ -1,6 +1,6 @@
 import http.client 
 
-conn = http.client.HTTPSConnection("search.onboard-apis.com") 
+conn = http.client.HTTPSConnection("api.gateway.attomdata.com") 
 
 headers = { 
     'accept': "application/json", 
