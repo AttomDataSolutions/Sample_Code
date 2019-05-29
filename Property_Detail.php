@@ -3,7 +3,7 @@
 $curl = curl_init(); 
 
 curl_setopt_array($curl, array( 
-  CURLOPT_URL => "https://search.onboard-apis.com/propertyapi/v1.0.0/property/detail?address1=4529%20Winona%20Court&address2=Denver%2C%20CO",
+  CURLOPT_URL => "https://api.gateway.attomdata.com/propertyapi/v1.0.0/property/detail?address1=4529%20Winona%20Court&address2=Denver%2C%20CO",
   CURLOPT_RETURNTRANSFER => true, 
   CURLOPT_ENCODING => "", 
   CURLOPT_MAXREDIRS => 10, 
