@@ -1,7 +1,7 @@
 require 'uri' 
 require 'net/http' 
 
-url = URI("https://search.onboard-apis.com/propertyapi/v1.0.0/property/detail?address1=4529%20Winona%20Court&address2=Denver%2C%20CO")
+url = URI("https://api.gateway.attomdata.com/propertyapi/v1.0.0/property/detail?address1=4529%20Winona%20Court&address2=Denver%2C%20CO")
 
 http = Net::HTTP.new(url.host, url.port) 
 http.use_ssl = true 
