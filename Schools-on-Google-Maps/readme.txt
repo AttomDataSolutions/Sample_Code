@@ -3,7 +3,7 @@ After following this guide and integrating the API with Google Maps in your prod
 
 ==Getting started==
 1.	The very first step would be setting up your product to hit the API through cURL in order to pull back location information about the schools within overlapping attendance zones of the address entered.
-a.	Here is an example API URL: https://search.onboard-apis.com/propertyapi/v1.0.0/property/detailwithschools?address1=4529%20Winona%20Court&address2=Denver%2C%20CO
+a.	Here is an example API URL: https://api.gateway.attomdata.com/propertyapi/v1.0.0/property/detailwithschools?address1=4529%20Winona%20Court&address2=Denver%2C%20CO
 2.	This API call returns an array containing property information along with specific details about schools in the applicable attendance zones around the property.
 3.	The next step is to initialize the Google Map per the same requested address. You can find details about that process here google map api link. 
 4.	Once you have completed the map initialization, then you need to set the marker pins per the latitude and longitude for the school that you want to display.
